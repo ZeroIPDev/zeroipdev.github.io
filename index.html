@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style/brightlight-green.css" type="text/css">
+    <link rel="icon" href="favicon.ico">
+    <title>ZeroIP – ONLINE</title>
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            user-select: none;
+        }
+        .center-text {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            user-select: none;
+        }
+        .section-header {
+            margin-top: 0;
+            margin-bottom: 0;
+            user-select: none;
+        }
+        .big-para {
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        }
+        #logo {
+            margin-top: 3em;
+        }
+        #year {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <header>
+            <a href="#">ZeroIP</a>
+        </header>
+        <input type="checkbox" id="nav" hidden checked>
+        <div overflow>
+            <ul>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section container>
+        <img class="center-img" id="logo" src="assets/logo.png" alt="logo" />
+        <h5 class="center-text">// online</h5>
+    </section>
+    <section container>
+        <h3 class="section-header" id="info">&#9862; Info</h3>
+        <hr>
+        <p>ZeroIP is a software startup primarily based in Toronto. Our core focus is on creating games, and technology to support in the creation of games.</p>
+        <p>We are experienced and professional. Get in contact if our services could be of use to you or your project!</p>
+    </section>
+    <section container>
+        <h3 class="section-header" id="projects">&#9862; Projects</h3>
+        <hr>
+        <h6 class="big-para">// BUILDING</h6>
+    </section>
+    <section container>
+        <h3 class="section-header" id="contact">&#9862; Contact</h3>
+        <hr>
+        <h6 class="big-para"><a href="mailto:biz@zeroip.dev">biz@zeroip.dev</a></h6>
+        <p>Reach out for:
+            <ul>
+                <li>Assistance developing your project</li>
+                <li>IP/legal inquiries</li>
+                <li>Other general business inquiries</li>
+            </ul>
+        </p>
+        <p>This is not a support email for our released products.</p>
+    </section>
+    <footer>&copy;<span id="year"></span> ZeroIP</footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
